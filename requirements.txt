@@ -1,0 +1,27 @@
+# Python packages that the predictive maintenance models depend on.
+
+# ==========================================
+# CORE DATA MANIPULATION & MATH
+# ==========================================
+pandas>=3.0.2
+numpy>=2.4.4
+scipy>=1.17.1
+
+# ==========================================
+# MACHINE LEARNING & PREPROCESSING
+# ==========================================
+scikit-learn>=1.8.0
+imbalanced-learn>=0.14.1
+
+# ==========================================
+# VISUALIZATION (EDA & THESIS FIGURES)
+# ==========================================
+matplotlib>=3.10.8
+seaborn>=0.13.2
+
+# ==========================================
+# DASHBOARD (PURE PYTHON / ZERO NODE.JS)
+# ==========================================
+plotly>=6.8.0
+
+

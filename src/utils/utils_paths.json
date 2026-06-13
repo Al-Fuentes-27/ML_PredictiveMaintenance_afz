@@ -1,0 +1,37 @@
+{
+  "_comment": "Rutas de archivos del proyecto. El dashboard es HTML estático (no React). Relativas a la raíz del proyecto.",
+  "_ubicacion": "src/utils/paths.json",
+
+  "data":                "../data/raw/dataset_ai4i2020.csv",
+  "processed_dir":       "../data/processed",
+  "models_dir":          "../models",
+  "results_dir":         "../results",
+  "figures_dir":         "../results/figures",
+  "reports_dir":         "../results/reports",
+  "dashboard_html":      "../dashboard/dashboard.html",
+  
+  "scaler":              "../models/scaler_v1.pkl",
+
+  "models": {
+    "decision_tree":       "../models/decision_tree_v1.pkl",
+    "random_forest":       "../models/random_forest_v1.pkl",
+    "logistic_regression": "../models/logistic_regression_v1.pkl"
+  },
+
+  "metrics": {
+    "consolidated":        "../results/metrics.json",
+    "decision_tree":       "../results/metrics_decision_tree.json",
+    "random_forest":       "../results/metrics_random_forest.json",
+    "logistic_regression": "../results/metrics_logistic_regression.json",
+    "preprocessing":       "../results/preprocessing_summary.json",
+    "eda_csv":             "../results/eda_estadisticas_descriptivas.csv",
+    "dashboard_data_dir":  "../data/dashboard_metrics"
+  },
+  "processed": {
+    "X_train_bal": "../data/processed/X_train_bal.npy",
+    "y_train_bal": "../data/processed/y_train_bal.npy",
+    "X_test_s":    "../data/processed/X_test_s.npy",
+    "y_test":      "../data/processed/y_test.npy",
+    "feature_names": "../data/processed/feature_names.json"
+  }
+}
