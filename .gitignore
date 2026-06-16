@@ -127,7 +127,6 @@ dmypy.json
 src/utils.egg-info/
 
 # Ignore everything inside data/ and outputs/
-dashboard/*
 data/*
 !data/raw/
 data/raw/*
@@ -140,7 +139,6 @@ results/*
 
 
 # But do not ignore the .gitkeep files
-!dashboard/.gitkeep*
 !data/.gitkeep*
 !data/raw/.gitkeep*
 !models/.gitkeep*
