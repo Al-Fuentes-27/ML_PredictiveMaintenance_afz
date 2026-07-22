@@ -180,23 +180,23 @@ def main() -> None:
     print("  Pipeline de Preparacion de Datos — AI4I 2020 (Matzka, 2020)")
     print("=" * 65)
 
-    print("\n[1/6] Cargando dataset...")
+    print("\n[1/7] Cargando dataset...")
     df = cargar_datos(args.data)
 
-    print("\n[2/6] Validando intervalos de la hipotesis...")
+    print("\n[2/7] Validando intervalos de la hipotesis...")
     validar_intervalos_hipotesis(df)
 
-    print("\n[3/6] Preparando features y variable objetivo...")
+    print("\n[3/7] Preparando features y variable objetivo...")
     X, y, feature_names = preparar_features(df)
 
-    print("\n[4/6] Dividiendo dataset (estratificado)...")
+    print("\n[4/7] Dividiendo dataset (estratificado)...")
     X_train, X_test, y_train, y_test = dividir_datos(
         X, y,
         test_size=args.test_size,
         random_state=args.random_state,
     )
 
-    print("\n[5/6] Normalizando con StandardScaler...")
+    print("\n[5/7] Normalizando con StandardScaler...")
     X_train_s, X_test_s, scaler, _ = normalizar(X_train, X_test)
 
 

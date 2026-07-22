@@ -1,8 +1,6 @@
-# 🏭 AI-Driven Predictive Maintenance Pipeline (AI4I 2020)
-
 <div align="center">
 
-# 🏭 AI-Driven Predictive Maintenance Pipeline
+# 🏭 AI-Driven Predictive Maintenance Pipeline (AI4I 2020)
 
 [![🚀 LIVE INTERACTIVE DASHBOARD](https://img.shields.io/badge/🚀_LIVE_DEMO-Interactive_Dashboard-0078D4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://al-fuentes-27.github.io/ML_PredictiveMaintenance_afz/dashboard/dashboard.html)
 
