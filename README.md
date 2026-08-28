@@ -28,6 +28,28 @@ An end-to-end Machine Learning pipeline designed to anticipate industrial machin
 
 ---
 
+## 📊 Enterprise BI Dashboard (Power BI)
+
+While the custom [HTML/Plotly Dashboard](./dashboard/dashboard.html) demonstrates my capabilities in **Software Engineering, Python MLOps, and Web Development**, this project also includes an enterprise-grade **Power BI Dashboard** to demonstrate **Business Intelligence (BI) acumen, Data Modeling, and Stakeholder Reporting**. 
+
+In a real-world manufacturing environment, Plant Managers and Maintenance Directors rely on enterprise ecosystems like Microsoft Fabric and Power BI rather than custom web apps. This `.pbix` file bridges the gap between Data Science and Business Operations.
+
+### 🏢 Business Value & Features
+* **Financial ROI Translation:** Uses DAX measures to translate ML metrics (True Positives, False Positives) into financial terms (e.g., *Gross Savings* from prevented emergency failures vs. *Wasted Inspection Costs* from false alarms).
+* **Star Schema Data Modeling:** A custom Python pipeline (`07_export_powerbi.py`) exports a flat, relational dataset optimized for Power BI's VertiPaq engine, separating ML processing from BI consumption.
+* **Hypothesis Validation Slicers:** Interactive filters allow stakeholders to slice data by Product Type (L, M, H) and validate the project's physical risk thresholds (e.g., Torque > 45.95 Nm, Tool Wear > 84.5 min).
+* **Model Monitoring:** Visualizes the Confusion Matrix and Failure Probability distributions to monitor model confidence and drift.
+
+### 🚀 How to Explore the Power BI Dashboard
+1. Download the `Predictive_Maintenance_Dashboard.pbix` file located in the [`/powerbi`](./powerbi/) folder.
+2. Open it using [Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) (free).
+3. Explore the three report pages:
+   * **Resumen Ejecutivo:** Financial impact, KPI cards (Recall, ROI), and high-level fleet health.
+   * **Diagnóstico y Zonas de Riesgo:** Scatter plots validating the physical degradation thresholds (Bunge's Scientific Method).
+   * **Monitor del Modelo:** Interactive Confusion Matrix and probability distributions for the Data Science team.
+
+---
+
 ## 🧪 Methodology
 
 This project strictly adheres to industry and scientific standards:
@@ -134,7 +156,9 @@ ML_PredictiveMaintenance_afz/
 ├── 📁 data/
 │   ├── raw/                     ← Original dataset (dataset_ai4i2020.csv)
 │   ├── processed/               ← Numpy arrays (Train/Test/SMOTE)
-│   └── dashboard_metrics/       ← JSON payload for the HTML dashboard
+│   ├── dashboard_metrics/       ← JSON payload for the HTML dashboard
+│   └── powerbi_datasets/        ← Flat CSVs optimized for Power BI
+│         └── fact_predictions.csv ← Test set sensor data + True Labels + RF Predictions
 │
 ├── 📁 src/                      ← Modular Python Pipeline
 │   ├── 01_exploratory_analysis.py
@@ -143,24 +167,37 @@ ML_PredictiveMaintenance_afz/
 │   ├── 04_evaluate_models.py
 │   ├── 05_save_results.py
 │   ├── 06_html_dashboard.py     ← Plotly + Tailwind CSS generator
+│   ├── 07_export_powerbi.py     ← Exports flat CSVs for Power BI
+│   ├── params.json
+│   ├── setup.py
 │   └── utils/                   ← Reusable functions (config, metrics, etc.)
+│         ├── utils___init__.py
+│         ├── utils_config.py
+│         ├── utils_metrics.py
+│         ├── utils_paths.json
+│         ├── utils_preprocessing.py
+│         ├── utils_visualization.py
+│         └── utils_paths.json
 │
 ├── 📁 models/                   ← Serialized .pkl models & scalers
 ├── 📁 results/                  ← Metrics (.json, .csv) & Figures (.png)
 ├── 📁 docs/                     ← Technical Reports (PDF)
-└── 📁 dashboard/                ← Final HTML Interactive Dashboard
+├── 📁 dashboard/                ← Final HTML Interactive Dashboard
+└── 📁 powerbi/                  ← The actual BI artifact
+      └── 📊 Predictive_Maintenance_Dashboard.pbix  ← The Power BI Desktop file
 ```
 
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
-| :--- | :--- |
+| --- | --- |
 | **Language** | Python 3.12 |
 | **Data Manipulation** | Pandas, Numpy |
 | **Machine Learning** | Scikit-Learn, Imbalanced-Learn (SMOTE) |
-| **Visualization** | Matplotlib, Seaborn, Plotly.js |
-| **Frontend / Dashboard** | HTML5, Tailwind CSS, Vanilla JavaScript |
-| **Methodologies** | CRISP-DM, Bunge's Scientific Method |
+| **Data Visualization** | Matplotlib, Seaborn, Plotly.js |
+| **Web Dashboard** | HTML5, Tailwind CSS, Vanilla JavaScript |
+| **Enterprise BI & Modeling** | Power BI, DAX, Star Schema, Power Query |
+| **Methodologies** | CRISP-DM, Bunge's Scientific Method, Bloom's Taxonomy |
 
 ---
 

@@ -15,7 +15,7 @@ Uso:
     from utils.preprocessing import cargar_datos, construir_pipeline
     from utils.visualization import graficar_confusion, graficar_roc
 
-Autor  : Aldo Fuentes Zaldívar
+Autor  : Aldo Fuentes Zaldivar
 Dataset: AI4I 2020 Predictive Maintenance (Matzka, 2020)
          DOI: https://doi.org/10.24432/C5HS5C
 """

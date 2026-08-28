@@ -33,5 +33,10 @@
     "X_test_s":    "../data/processed/X_test_s.npy",
     "y_test":      "../data/processed/y_test.npy",
     "feature_names": "../data/processed/feature_names.json"
+  }, 
+  "powerbi_dir": "../data/powerbi_datasets",
+  "powerbi": {
+    "fact_predictions": "../data/powerbi_datasets/fact_predictions.csv",
+    "pbix_file":        "../powerbi/Predictive_Maintenance_Dashboard.pbix"
   }
 }
