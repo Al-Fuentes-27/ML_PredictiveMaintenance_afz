@@ -207,7 +207,7 @@ ML_PredictiveMaintenance_afz/
 *Mechanical Engineering | UAEMex*  
 Specializing in Data Science, Machine Learning, and Industrial Maintenance.
 
-<!--[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/aldo-fuentes-zaldivar/)-->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](http://www.linkedin.com/in/aldo-fuentes-3816a9424)
 [![GitHub](https://img.shields.io/badge/GitHub-Al--Fuentes--27-black?logo=github)](https://github.com/Al-Fuentes-27)
 
 ---
